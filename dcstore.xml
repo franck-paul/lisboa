@@ -1,11 +1,11 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="lisboa">
     <name>Lisboa</name>
-    <version>1.5</version>
+    <version>1.6</version>
     <author>Dotclear Team</author>
     <desc>Dotclear 2.34 theme</desc>
-    <date>2025-04-25T13:42:00+0100</date>
-    <file>https://github.com/franck-paul/lisboa/releases/download/1.5/theme-lisboa-1.5.zip</file>
+    <date>2025-04-26T10:51:38+0200</date>
+    <file>https://github.com/franck-paul/lisboa/releases/download/1.6/theme-lisboa-1.6.zip</file>
     <da:dcmin>2.34</da:dcmin>
     <da:details>https://open-time.net/?q=lisboa</da:details>
     <da:support>https://github.com/franck-paul/lisboa</da:support>
