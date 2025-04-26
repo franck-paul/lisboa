@@ -13,4 +13,4 @@ msgid "toDay"
 msgstr "au"
 
 msgid "FromDay"
-msgstr "De"
+msgstr "Du"
