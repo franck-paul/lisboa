@@ -20,5 +20,10 @@ $this->registerModule(
         'type'     => 'theme',
         'tplset'   => 'dotty',
         'license'  => 'gpl2',
+
+        'details'    => 'https://open-time.net/?q=lisboa',
+        'support'    => 'https://github.com/franck-paul/lisboa',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/lisboa/main/dcstore.xml',
+        'license'    => 'gpl2',
     ]
 );
