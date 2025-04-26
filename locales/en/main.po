@@ -1,5 +1,17 @@
-msgid "toDay"
-msgstr "to"
+msgid "Pages"
+msgstr ""
 
-msgid "FromDay"
-msgstr "From"
+msgid "Show menu"
+msgstr ""
+
+msgid "Hide menu"
+msgstr ""
+
+msgid "Main menu"
+msgstr ""
+
+#~ msgid "toDay"
+#~ msgstr "to"
+
+#~ msgid "FromDay"
+#~ msgstr "From"

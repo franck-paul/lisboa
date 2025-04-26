@@ -1,26 +1,38 @@
-msgid "Additionnal style directives"
-msgstr "Instrucciones CSS adicionales"
+msgid "Pages"
+msgstr ""
 
-msgid "reactions"
-msgstr "reacciones"
+msgid "Show menu"
+msgstr ""
 
-msgid "Add ping"
-msgstr "Agregar un retroenlace"
+msgid "Hide menu"
+msgstr ""
 
-msgid "Suggestions:"
-msgstr "Sugerencias:"
+msgid "Main menu"
+msgstr ""
 
-msgid "Go to homepage"
-msgstr "Regresar al inicio"
+#~ msgid "Additionnal style directives"
+#~ msgstr "Instrucciones CSS adicionales"
 
-msgid "Use search form"
-msgstr "Buscar"
+#~ msgid "reactions"
+#~ msgstr "reacciones"
 
-msgid "Explore archives"
-msgstr "Explorar los archivos"
+#~ msgid "Add ping"
+#~ msgstr "Agregar un retroenlace"
 
-msgid "From"
-msgstr "Del"
+#~ msgid "Suggestions:"
+#~ msgstr "Sugerencias:"
 
-msgid "URL you've tried has typos, or the page has been deleted or moved."
-msgstr "Su URL está equivocada o la página fue borrada o desplazada."
+#~ msgid "Go to homepage"
+#~ msgstr "Regresar al inicio"
+
+#~ msgid "Use search form"
+#~ msgstr "Buscar"
+
+#~ msgid "Explore archives"
+#~ msgstr "Explorar los archivos"
+
+#~ msgid "From"
+#~ msgstr "Del"
+
+#~ msgid "URL you've tried has typos, or the page has been deleted or moved."
+#~ msgstr "Su URL est equivocada o la pgina fue borrada o desplazada."
