@@ -1,0 +1,27 @@
+#a42-ac,
+nav,
+#offcanvas-on,
+.post-read-it,
+.share,
+#gotop,
+.widgets,
+.bigfoot-footnote__container {
+  display: none !important;
+}
+
+ul.post-tags-list {
+  list-style: none;
+  display: flex;
+  gap: 0.5em;
+  padding-inline-start: 1em;
+}
+.post-info-co {
+  margin-left: 1em;
+}
+li.post-tags-item:before {
+  content: '#';
+}
+.post-permalink a::after {
+  content: ' (' attr(href) ') ';
+  color: #333;
+}
