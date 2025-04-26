@@ -13,9 +13,9 @@ $this->registerModule(
     'Lisboa',
     'Dotclear 2.34 theme',
     'Dotclear Team',
-    '1.6',
+    '1.7',
     [
-        'date'     => '2025-04-26T10:51:38+0200',
+        'date'     => '2025-04-26T11:02:48+0200',
         'requires' => [['core', '2.34']],
         'type'     => 'theme',
         'tplset'   => 'dotty',
