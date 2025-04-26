@@ -1,0 +1,16 @@
+# 
+# Translators:
+# Franck Paul <carnet.franck.paul@gmail.com>, 2025
+# 
+msgid ""
+msgstr ""
+"Last-Translator: Franck Paul <carnet.franck.paul@gmail.com>, 2025\n"
+"Language-Team: Portuguese (https://app.transifex.com/open-time/teams/109573/pt/)\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+msgid "toDay"
+msgstr "para"
+
+msgid "FromDay"
+msgstr "De"
