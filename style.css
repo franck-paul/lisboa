@@ -644,7 +644,7 @@
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 4em;
     line-height: 1.2;
   }
 
@@ -1165,6 +1165,7 @@
   .site-baseline {
     font-family: var(--font-quote);
     font-style: italic;
+    font-size: 1.5em;
     margin-top: 0;
     margin-bottom: 0.5em;
     color: var(--site-baseline-color);
@@ -2541,7 +2542,12 @@
 @layer layout-0-40 {
   @media screen and (width <= 40em) {
     .site-title {
-      font-size: 1.8em;
+      font-size: 3em;
+      line-height: 1;
+    }
+
+    .site-baseline {
+      font-size: 1.25em;
     }
 
     .post-title {
