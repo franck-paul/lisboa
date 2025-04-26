@@ -11,4 +11,4 @@
 use Dotclear\Helper\L10n;
 
 L10n::$locales['toDay'] = 'au';
-L10n::$locales['FromDay'] = 'De';
+L10n::$locales['FromDay'] = 'Du';
