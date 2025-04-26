@@ -1,26 +1,16 @@
-msgid "Additionnal style directives"
-msgstr "Instrucciones CSS adicionales"
+# 
+# Translators:
+# Franck Paul <carnet.franck.paul@gmail.com>, 2025
+# 
+msgid ""
+msgstr ""
+"Last-Translator: Franck Paul <carnet.franck.paul@gmail.com>, 2025\n"
+"Language-Team: Spanish (https://app.transifex.com/open-time/teams/109573/es/)\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-msgid "reactions"
-msgstr "reacciones"
+msgid "toDay"
+msgstr "a"
 
-msgid "Add ping"
-msgstr "Agregar un retroenlace"
-
-msgid "Suggestions:"
-msgstr "Sugerencias:"
-
-msgid "Go to homepage"
-msgstr "Regresar al inicio"
-
-msgid "Use search form"
-msgstr "Buscar"
-
-msgid "Explore archives"
-msgstr "Explorar los archivos"
-
-msgid "From"
-msgstr "Del"
-
-msgid "URL you've tried has typos, or the page has been deleted or moved."
-msgstr "Su URL está equivocada o la página fue borrada o desplazada."
+msgid "FromDay"
+msgstr "En"
