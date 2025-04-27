@@ -753,13 +753,14 @@
     }
   }
 
-  q::before,
-  cite::before {
-    content: open-quote;
-  }
-  q::after,
-  cite::after {
-    content: close-quote;
+  q,
+  cite {
+    &::before {
+      content: open-quote;
+    }
+    &::after {
+      content: close-quote;
+    }
   }
 
   :lang(en),
@@ -1051,22 +1052,18 @@
     margin: 0 auto;
     padding: 0;
   }
-  #page::before,
-  #page::after {
-    content: '';
-    display: table;
-  }
-  #page::after {
-    clear: both;
-  }
 
-  #wrapper::before,
-  #wrapper::after {
-    content: '';
-    display: table;
-  }
-  #wrapper::after {
-    clear: both;
+  #page,
+  #wrapper {
+    &::before,
+    &::after {
+      content: '';
+      display: table;
+    }
+
+    &::after {
+      clear: both;
+    }
   }
 
   #offcanvas-on {
@@ -1082,18 +1079,20 @@
     background-position: 1em 1em;
     background-size: 7em 7em;
     min-height: 9em;
-  }
 
-  .header a:link,
-  .header a:visited {
-    color: var(--header-link-color);
-    border-bottom-color: var(--header-link-border-color);
-  }
+    a {
+      &:link,
+      &:visited {
+        color: var(--header-link-color);
+        border-bottom-color: var(--header-link-border-color);
+      }
 
-  .header a:hover,
-  .header a:focus {
-    color: var(--header-link-focus-color);
-    border-bottom-color: transparent;
+      &:hover,
+      &:focus {
+        color: var(--header-link-focus-color);
+        border-bottom-color: transparent;
+      }
+    }
   }
 
   .skip-links {
@@ -1169,43 +1168,44 @@
     clear: left;
     text-align: right;
     background: var(--header-nav-background-color);
-  }
-  .header__nav li {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0;
-    display: inline-block;
-    vertical-align: middle;
-    white-space: nowrap;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-right: 0.5em;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    text-align: center;
 
-    span:not(.simple-menu-label) {
-      font-size: 0.875em;
-      line-height: 1.7142857em;
-      font-family: var(--font-quote);
-      font-style: italic;
-      display: block;
-    }
+    li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      display: inline-block;
+      vertical-align: middle;
+      white-space: nowrap;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-right: 0.5em;
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+      text-align: center;
 
-    a:link,
-    a:visited {
-      color: var(--header-nav-color);
-    }
+      span:not(.simple-menu-label) {
+        font-size: 0.875em;
+        line-height: 1.7142857em;
+        font-family: var(--font-quote);
+        font-style: italic;
+        display: block;
+      }
 
-    &:hover,
-    &:active,
-    &:focus,
-    &:focus-within,
-    a:hover,
-    a:focus,
-    a:focus-within,
-    a:active {
-      background-color: var(--header-nav-focus-background-color);
+      a:link,
+      a:visited {
+        color: var(--header-nav-color);
+      }
+
+      &:hover,
+      &:active,
+      &:focus,
+      &:focus-within,
+      a:hover,
+      a:focus,
+      a:focus-within,
+      a:active {
+        background-color: var(--header-nav-focus-background-color);
+      }
     }
   }
 
@@ -1482,101 +1482,110 @@
   }
 
   /* Contenu */
-  #content p:has(> span.ellipsis) {
-    word-break: break-word;
-  }
-  #content span.ellipsis {
-    font-size: smaller;
-  }
-
-  #content hr {
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-    width: 50%;
-  }
-  /* Aside element
-    --------------
-    specific classes :
-    - <none>  : float right; (default)
-    - left    : float left;
-    - inline  : in flow (looks like blockquote);
-
-    Under 60em screen width use .inline way
-  */
-  #content aside.left {
-    float: left;
-    margin: 0 2em 1em -2em;
-    border-right: 3px solid var(--aside-border-color);
-    border-left: none;
-  }
-  #content aside.inline {
-    float: inherit;
-    width: inherit;
-    margin: 1em 2em;
-  }
-  #content aside :first-child:not(code) {
-    margin-top: 0;
-    padding-top: 0.5em;
-  }
-  #content aside :last-child:not(code) {
-    padding-bottom: 0.5em;
-  }
-
-  #content table {
-    width: 100%;
-  }
-  #content th,
-  #content td {
-    padding: 0.25rem;
-    border: 1px solid var(--content-tablecell-border-color);
-  }
-  #content tbody tr:nth-child(odd) {
-    background: var(--content-tablerow-odd-background-color);
-  }
-  #content .header {
-    background-image: none;
-  }
-
-  /* Figure */
-  #content figure a,
-  figure a:link,
-  figure a:visited {
-    border-bottom: none;
-  }
-  #content figure figcaption {
-    font-size: 0.75em;
-    line-height: 1.5;
-    width: fit-content;
-
-    &::before {
-      content: '→ ';
-      content: 'ⓘ ' / '';
+  #content {
+    p:has(> span.ellipsis) {
+      word-break: break-word;
+    }
+    span.ellipsis {
+      font-size: smaller;
     }
 
-    a {
-      &:hover,
-      &:focus,
-      &:active {
-        border-bottom: 1px solid;
+    hr {
+      margin-top: 2.5em;
+      margin-bottom: 2.5em;
+      width: 50%;
+    }
+
+    /* Aside element
+      --------------
+      specific classes :
+      - <none>  : float right; (default)
+      - left    : float left;
+      - inline  : in flow (looks like blockquote);
+    */
+    aside {
+      &.left {
+        float: left;
+        margin: 0 2em 1em -2em;
+        border-right: 3px solid var(--aside-border-color);
+        border-left: none;
+      }
+      &.inline {
+        float: inherit;
+        width: inherit;
+        margin: 1em 2em;
+      }
+
+      :first-child:not(code) {
+        margin-top: 0;
+        padding-top: 0.5em;
+      }
+      :last-child:not(code) {
+        padding-bottom: 0.5em;
       }
     }
 
-    p:first-of-type {
-      display: inline-block;
-      margin-block-start: 0;
+    table {
+      width: 100%;
     }
-  }
+    th,
+    td {
+      padding: 0.25rem;
+      border: 1px solid var(--content-tablecell-border-color);
+    }
+    tbody tr:nth-child(odd) {
+      background: var(--content-tablerow-odd-background-color);
+    }
 
-  /* Details */
-  #content details {
-    padding: 0.5em;
-    border-radius: 0.25em;
-    summary {
-      padding: 0.5em;
+    .header {
+      background-image: none;
     }
-  }
-  #content details[open] summary {
-    margin-bottom: 0.5em;
+
+    /* Figure */
+    figure {
+      a,
+      a:link,
+      a:visited {
+        border-bottom: none;
+      }
+
+      figcaption {
+        font-size: 0.75em;
+        line-height: 1.5;
+        width: fit-content;
+
+        &::before {
+          content: '→ ';
+          content: 'ⓘ ' / '';
+        }
+
+        a {
+          &:hover,
+          &:focus,
+          &:active {
+            border-bottom: 1px solid;
+          }
+        }
+
+        p:first-of-type {
+          display: inline-block;
+          margin-block-start: 0;
+        }
+      }
+    }
+
+    /* Details */
+    details {
+      padding: 0.5em;
+      border-radius: 0.25em;
+      summary {
+        padding: 0.5em;
+      }
+
+      &[open] summary {
+        margin-bottom: 0.5em;
+      }
+    }
   }
 
   /* Content info */
@@ -1825,23 +1834,24 @@
     max-width: 49em;
     margin: 3em auto;
     clear: both;
-  }
 
-  .post-feedback h3 {
-    color: var(--post-feedback-title-color);
-    text-align: center;
-    font-size: 1.25em;
-    font-weight: bold;
+    h3 {
+      color: var(--post-feedback-title-color);
+      text-align: center;
+      font-size: 1.25em;
+      font-weight: bold;
+    }
   }
 
   .comments-list {
     list-style: none;
     padding-left: 0;
-  }
-  .comments-list li {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0;
+
+    li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+    }
   }
 
   .comment,
@@ -2671,9 +2681,6 @@
       flex-direction: column;
       align-items: center;
     }
-  }
-  img,
-  figure {
     &.media-left {
       float: inline-start;
       margin-inline-end: 1em;
@@ -2682,9 +2689,6 @@
       flex-direction: column;
       align-items: center;
     }
-  }
-  img,
-  figure {
     &.media-right {
       float: inline-end;
       margin-inline-start: 1em;
