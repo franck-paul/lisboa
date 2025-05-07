@@ -72,7 +72,7 @@ dotclear.ready(() => {
       element.setAttribute('aria-expanded', close ? 'false' : 'true');
       if (close) element.classList.remove('open');
       else element.classList.add('open');
-      headerNav.style.display = close ? 'none' : 'block';
+      headerNav.style.display = close ? 'none' : 'flex';
     };
     const doButton = (element, small) => {
       // Don't display on/off button on large screens

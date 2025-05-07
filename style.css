@@ -1160,6 +1160,8 @@
 
   .header__nav {
     display: none;
+    flex-direction: row;
+    justify-content: flex-end;
     visibility: hidden;
     margin: 0;
     padding: 0;
@@ -1211,7 +1213,7 @@
 
   /* Spécifique sans/avec JS */
   html:not(.js) .header__nav {
-    display: block;
+    display: flex;
   }
   html.js .header__nav {
     visibility: initial;
@@ -2484,6 +2486,8 @@
     .header__nav {
       margin-left: -0.5em;
       margin-right: -0.5em;
+      flex-direction: column;
+      justify-content: flex-start;
 
       li {
         display: block;
