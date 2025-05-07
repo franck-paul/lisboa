@@ -709,6 +709,7 @@
     background: var(--hr-background-color);
     background-size: 100%;
     background-image: linear-gradient(to right, var(--hr-gradient-end), var(--hr-gradient-middle), var(--hr-gradient-end));
+    clear: both;
   }
 
   p {
