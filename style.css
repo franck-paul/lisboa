@@ -1248,17 +1248,6 @@
     max-width: 100px;
   }
 
-  .blogcustom__title {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
   .sidebar {
     color: var(--sidebar-color);
     background-color: var(--sidebar-background-color);
@@ -1348,6 +1337,25 @@
     font-size: 1.125em;
     text-transform: uppercase;
     font-weight: bold;
+  }
+
+  .blogcustom__title {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .blognav__title,
+  .blogextra__title,
+  .blogcustom__title {
+    &:only-child {
+      display: none;
+    }
   }
 
   .blognav__widgets,
