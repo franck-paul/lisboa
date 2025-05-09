@@ -2309,7 +2309,6 @@
       margin-right: -100%;
       padding-left: 2em;
       padding-right: 2em;
-      -moz-box-sizing: border-box;
       box-sizing: border-box;
       word-wrap: break-word;
     }
@@ -2321,24 +2320,26 @@
       margin-right: -100%;
       padding-left: 1em;
       padding-right: 1em;
-      -moz-box-sizing: border-box;
       box-sizing: border-box;
       word-wrap: break-word;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5em;
 
-      & .widgets:first-child {
-        margin-right: 0.5em;
+      .widgets {
+        margin-top: 0;
+        flex: 2 1 calc((100% - 1em) / 2);
+
+        &:empty {
+          display: none;
+        }
+        &:has(h2:only-child) {
+          display: none;
+        }
       }
-    }
-
-    #blognav,
-    #blogextra {
-      width: calc((100% - 1em) / 2);
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    .widgets + .widgets {
-      margin-top: 0;
     }
   }
 
@@ -2354,7 +2355,6 @@
       margin-right: -100%;
       padding-left: 2em;
       padding-right: 2em;
-      -moz-box-sizing: border-box;
       box-sizing: border-box;
       word-wrap: break-word;
 
@@ -2370,7 +2370,6 @@
       margin-right: -100%;
       padding-left: 1em;
       padding-right: 1em;
-      -moz-box-sizing: border-box;
       box-sizing: border-box;
       word-wrap: break-word;
 
@@ -2438,7 +2437,6 @@
       margin-left: -100%;
       padding-left: 1em;
       padding-right: 1em;
-      -moz-box-sizing: border-box;
       box-sizing: border-box;
       word-wrap: break-word;
     }
