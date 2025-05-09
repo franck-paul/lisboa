@@ -2931,3 +2931,13 @@ div.footnotes[role='doc-endnotes'] ol li::marker {
   color: var(--footnotes-marker-color);
   font-size: smaller;
 }
+
+/* Cancel no layer media alignement from public.css */
+.media-center {
+  display: flex !important;
+  align-items: center;
+}
+.media-left,
+.media-right {
+  display: inline-flex !important;
+}
