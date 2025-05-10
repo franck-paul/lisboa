@@ -1489,7 +1489,8 @@
     }
   }
 
-  #q {
+  #q,
+  input[type='search'] {
     width: 75%;
     height: 1.75em;
     margin-right: 0.5em;
@@ -1962,12 +1963,14 @@
   }
 
   #q label,
+  input[type='search'] label,
   .field label {
     display: inline-block;
     width: 10em;
   }
 
   #q,
+  input[type='search'],
   .field input,
   .field textarea {
     padding: 0.25em;
@@ -1975,6 +1978,7 @@
   }
 
   #q,
+  input[type='search'],
   .field input {
     max-width: 100%;
   }
