@@ -1280,6 +1280,10 @@
 
     li:hover ul {
       background-color: var(--sidebar-focus-background-color);
+      li:hover,
+      li:hover a {
+        background-color: var(--sidebar-background-color);
+      }
     }
   }
 
