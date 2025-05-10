@@ -489,6 +489,11 @@
     --util-parser-background-color: light-dark(#eaf1ff, #033c5d);
     --util-parser-border-color: light-dark(#578fff, #121212);
     --util-timestamp-background-color: light-dark(#ddd, #373737);
+
+    /* 3rd party basic colors (useful for plugins) */
+    --primary-color: var(--body-color);
+    --primary-background-color: var(--body-background-color);
+    --secondary-color: var(--hx-color);
   }
 
   /* Fin colors */
