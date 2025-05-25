@@ -2073,6 +2073,7 @@
     text-align: right;
   }
 
+  #a42-ac-button, /* a11yConfig button */
   input[type='submit'],
   input.submit,
   button[type='submit'],
