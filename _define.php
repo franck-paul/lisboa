@@ -16,10 +16,11 @@ $this->registerModule(
     '1.19',
     [
         'date'     => '2025-05-25T18:29:47+0200',
-        'requires' => [['core', '2.34']],
+        'requires' => [['core', '2.35']],
         'type'     => 'theme',
         'tplset'   => 'dotty',
         'license'  => 'gpl2',
+        'overload' => true,
 
         'details'    => 'https://open-time.net/?q=lisboa',
         'support'    => 'https://github.com/franck-paul/lisboa',

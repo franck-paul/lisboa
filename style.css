@@ -519,7 +519,7 @@
   /* Fonts */
   @font-face {
     font-family: 'noto_serifregular';
-    src: url('font/NotoSerif-Regular-webfont.woff') format('woff');
+    src: url(index.php?tf=font/NotoSerif-Regular-webfont.woff) format('woff');
     font-style: normal;
     font-weight: normal;
   }
@@ -527,73 +527,73 @@
     font-family: 'LibertinusSerif';
     font-style: normal;
     font-weight: normal;
-    src: url('font/LibertinusSerif-Regular.woff2');
+    src: url(index.php?tf=font/LibertinusSerif-Regular.woff2);
   }
   @font-face {
     font-family: 'LibertinusSerif';
     font-style: italic;
     font-weight: normal;
-    src: url('font/LibertinusSerif-Italic.woff2');
+    src: url(index.php?tf=font/LibertinusSerif-Italic.woff2);
   }
   @font-face {
     font-family: 'LibertinusSerif';
     font-style: normal;
     font-weight: bold;
-    src: url('font/LibertinusSerif-Bold.woff2');
+    src: url(index.php?tf=font/LibertinusSerif-Bold.woff2);
   }
   @font-face {
     font-family: 'LibertinusSerif';
     font-style: italic;
     font-weight: bold;
-    src: url('font/LibertinusSerif-BoldItalic.woff2');
+    src: url(index.php?tf=font/LibertinusSerif-BoldItalic.woff2);
   }
   @font-face {
     font-family: 'Atkinson-Hyperlegible';
     font-style: normal;
     font-weight: normal;
-    src: url('font/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
+    src: url(index.php?tf=font/Atkinson-Hyperlegible-Regular-102a.woff2) format('woff2');
   }
   @font-face {
     font-family: 'Atkinson-Hyperlegible';
     font-style: italic;
     font-weight: normal;
-    src: url('font/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2');
+    src: url(index.php?tf=font/Atkinson-Hyperlegible-Italic-102a.woff2) format('woff2');
   }
   @font-face {
     font-family: 'Atkinson-Hyperlegible';
     font-style: normal;
     font-weight: bold;
-    src: url('font/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2');
+    src: url(index.php?tf=font/Atkinson-Hyperlegible-Bold-102a.woff2) format('woff2');
   }
   @font-face {
     font-family: 'Atkinson-Hyperlegible';
     font-style: italic;
     font-weight: bold;
-    src: url('font/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2');
+    src: url(index.php?tf=font/Atkinson-Hyperlegible-BoldItalic-102a.woff2) format('woff2');
   }
   @font-face {
     font-family: 'Arsenal';
     font-style: normal;
     font-weight: normal;
-    src: url('font/Arsenal-Regular.woff2') format('woff2');
+    src: url(index.php?tf=font/Arsenal-Regular.woff2) format('woff2');
   }
   @font-face {
     font-family: 'Arsenal';
     font-style: italic;
     font-weight: normal;
-    src: url('font/Arsenal-Italic.woff2') format('woff2');
+    src: url(index.php?tf=font/Arsenal-Italic.woff2) format('woff2');
   }
   @font-face {
     font-family: 'Arsenal';
     font-style: normal;
     font-weight: bold;
-    src: url('font/Arsenal-Bold.woff2') format('woff2');
+    src: url(index.php?tf=font/Arsenal-Bold.woff2) format('woff2');
   }
   @font-face {
     font-family: 'Arsenal';
     font-style: italic;
     font-weight: bold;
-    src: url('font/Arsenal-BoldItalic.woff2') format('woff2');
+    src: url(index.php?tf=font/Arsenal-BoldItalic.woff2) format('woff2');
   }
 
   :root {
@@ -1079,7 +1079,7 @@
     position: relative;
     padding: 0.25em;
     background: var(--header-background-color);
-    background-image: url(img/solide.svg);
+    background-image: url(index.php?tf=img/solide.svg);
     background-repeat: no-repeat;
     background-position: 1em 1em;
     background-size: 7em 7em;
@@ -1829,7 +1829,7 @@
     border: 1px solid var(--post-attachments-border-color);
 
     &::before {
-      content: url('img/mark-attach.svg');
+      content: url(index.php?tf=img/mark-attach.svg);
       display: block;
       position: absolute;
       margin-top: -0.33em;
@@ -1890,7 +1890,7 @@
   }
 
   .ping {
-    background: var(--ping-background-color) url('img/mark-pings.svg') no-repeat 1.25em 4em;
+    background: var(--ping-background-color) url(index.php?tf=img/mark-pings.svg) no-repeat 1.25em 4em;
     background-size: 1.125em;
   }
 
@@ -1909,7 +1909,7 @@
     z-index: 1000;
     line-height: 2.5em;
     text-align: center;
-    background-image: url(img/icon-link.svg);
+    background-image: url(index.php?tf=img/icon-link.svg);
     background-size: 1em;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -2030,37 +2030,37 @@
     padding-right: 0.5em;
   }
   .post-date {
-    background-image: url(img/mark-date.svg);
+    background-image: url(index.php?tf=img/mark-date.svg);
     padding-left: 1.25em;
   }
   .post-cat {
-    background-image: url(img/mark-cat.svg);
+    background-image: url(index.php?tf=img/mark-cat.svg);
     padding-left: 1.3em;
   }
   .post-tags-list {
-    background-image: url(img/mark-tags.svg);
+    background-image: url(index.php?tf=img/mark-tags.svg);
     padding-left: 1.25em;
   }
   .comment_count {
-    background-image: url(img/mark-comments.svg);
+    background-image: url(index.php?tf=img/mark-comments.svg);
     padding-left: 1.4em;
   }
   .ping_count {
-    background-image: url(img/mark-pings.svg);
+    background-image: url(index.php?tf=img/mark-pings.svg);
     padding-left: 1.3em;
   }
   .attach_count {
-    background-image: url(img/mark-attach.svg);
+    background-image: url(index.php?tf=img/mark-attach.svg);
     background-size: 1em;
     padding-left: 1em;
   }
   .post-permalink {
-    background-image: url(img/mark-permalink.svg);
+    background-image: url(index.php?tf=img/mark-permalink.svg);
     padding-left: 1.25em;
   }
 
   .feed {
-    background-image: url('img/mark-feed.svg');
+    background-image: url(index.php?tf=img/mark-feed.svg);
     background-size: 0.875em;
     padding-left: 1.75em;
   }
@@ -2749,10 +2749,10 @@
     box-sizing: border-box;
   }
   .attention {
-    background: var(--util-msg-warning-background-color) no-repeat 14px 0.7em url(img/attention.svg);
+    background: var(--util-msg-warning-background-color) no-repeat 14px 0.7em url(index.php?tf=img/attention.svg);
   }
   .information {
-    background: var(--util-msg-information-background-color) no-repeat 14px 0.7em url(img/information.svg);
+    background: var(--util-msg-information-background-color) no-repeat 14px 0.7em url(index.php?tf=img/information.svg);
   }
 
   /* Exemple de résultat du parseur wiki/markdown/… */
