@@ -148,12 +148,6 @@
     border: none;
   }
 
-  button::-moz-focus-inner,
-  input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-  }
-
   textarea {
     overflow: auto;
     vertical-align: top;
@@ -637,25 +631,25 @@
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1.2;
   }
 
   h2 {
-    font-size: 4em;
+    font-size: 2em;
     line-height: 1.2;
     margin-bottom: 0.5em;
   }
 
   h3 {
-    font-size: 1.75em;
+    font-size: 1.5em;
     line-height: 1.33;
     margin-block-start: 0.5714286em;
     margin-block-end: 0.4285714em;
   }
 
   h4 {
-    font-size: 1.3125em;
+    font-size: 1.25em;
     margin-block-start: 1.1428571em;
     margin-block-end: 0.7619048em;
   }
@@ -1082,8 +1076,8 @@
     background-image: url(index.php?tf=img/solide.svg);
     background-repeat: no-repeat;
     background-position: 1em 1em;
-    background-size: 7em 7em;
-    min-height: 9em;
+    background-size: 6em 6em;
+    min-height: 8em;
 
     a {
       &:link,
@@ -1134,8 +1128,8 @@
   }
 
   .banner {
-    padding-bottom: 1em;
-    margin-left: 9em;
+    padding-bottom: 0;
+    margin-left: 8em;
   }
 
   a.site-title__link,
@@ -1175,17 +1169,16 @@
     clear: left;
     text-align: right;
     background: var(--header-nav-background-color);
+    gap: 0.5em;
 
     li {
       list-style-image: none;
       list-style-type: none;
-      margin-left: 0;
       display: inline-block;
       vertical-align: middle;
       white-space: nowrap;
-      padding-left: 1em;
-      padding-right: 1em;
-      margin-right: 0.5em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
       padding-top: 0.25em;
       padding-bottom: 0.25em;
       text-align: center;
@@ -1343,7 +1336,7 @@
     background-color: var(--widget-title-background-color);
     margin-bottom: 1em;
     padding: 0.5em 1em;
-    font-size: 1.125em;
+    font-size: 1em;
     text-transform: uppercase;
     font-weight: bold;
   }
@@ -2466,7 +2459,7 @@
 @layer layout-60-999 {
   @media screen and (width > 60em) {
     .banner {
-      margin-left: 9em;
+      margin-left: 8em;
     }
     #footer p {
       margin-left: 1em;
