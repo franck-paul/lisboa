@@ -2471,18 +2471,21 @@
 
 @layer layout-60-80 {
   @media screen and (width > 60em) and (width <= 80em) {
-    .blognav__title,
-    .blogextra__title {
-      width: calc(100% - 1em);
-      float: left;
-      margin: 0 0.5em 0.5em;
-    }
+    /* 3 columns for widgets */
+    .blognav__widgets,
+    .blogextra__widgets {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
 
-    .blognav__widgets .widget,
-    .blogextra__widgets .widget {
-      width: calc((100% - 3em) / 3);
-      float: left;
-      margin: 0 0.5em 0.5em;
+      .blognav__title,
+      .blogextra__title {
+        margin: 0 0.5em 0.5em;
+        grid-column: 1 / 4;
+      }
+
+      .widget {
+        margin: 0 0.5em 0.5em;
+      }
     }
   }
 
@@ -2613,6 +2616,23 @@
   /* Fin layout-30-999 */
 }
 
+@layer layout-40-60 {
+  @media screen and (width > 40em) and (width <= 60em) {
+    .blognav__widgets,
+    .blogextra__widgets {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .blognav__title,
+      .blogextra__title {
+        grid-column: 1 / 3;
+      }
+    }
+  }
+
+  /* Fin layout-40-60 */
+}
+
 @layer layout-30-60 {
   @media screen and (width > 30em) and (width <= 60em) {
     pre {
@@ -2629,12 +2649,6 @@
     }
     #content pre img {
       max-width: none;
-    }
-
-    .blognav__widgets .widget,
-    .blogextra__widgets .widget {
-      width: 50%;
-      float: left;
     }
   }
 
