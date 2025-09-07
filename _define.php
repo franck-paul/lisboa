@@ -16,7 +16,7 @@ $this->registerModule(
     '2.3',
     [
         'date'     => '2025-06-27T13:19:41+02.3',
-        'requires' => [['core', '2.35']],
+        'requires' => [['core', '2.36']],
         'type'     => 'theme',
         'tplset'   => 'dotty',
         'license'  => 'gpl2',
