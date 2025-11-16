@@ -1402,7 +1402,7 @@
       margin: 0;
     }
     li {
-      padding: 0.25em;
+      padding: 0.125em;
       border-bottom: 1px solid var(--widget-border-color);
       position: relative;
 
