@@ -143,7 +143,10 @@ dotclear.ready(() => {
   buttonGoTop.style.display = document.querySelector('html').scrollTop > 0 ? 'block' : 'none';
 
   // scroll comment preview if present
-  document.getElementById('pr')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+  const isMotionReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`)?.matches === true;
+  document
+    .getElementById('pr')
+    ?.scrollIntoView({ behavior: isMotionReduced ? 'instant' : 'smooth', block: 'center', inline: 'nearest' });
 
   // Add er to every 1 of month (French only)
   for (const element of document.querySelectorAll('time')) {

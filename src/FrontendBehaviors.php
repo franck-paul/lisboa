@@ -36,6 +36,7 @@ class FrontendBehaviors
 
         return '';
     }
+
     public static function publicHeadContent(): string
     {
         echo
