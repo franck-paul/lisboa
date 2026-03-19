@@ -2705,33 +2705,6 @@
 }
 
 @layer utilities {
-  /* Media alignement */
-  img,
-  figure {
-    &.media-center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    &.media-left {
-      float: inline-start;
-      margin-inline-end: 1em;
-      margin-block-end: 1em;
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &.media-right {
-      float: inline-end;
-      margin-inline-start: 1em;
-      margin-block-end: 1em;
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
   /* Citation */
   .signature {
     display: block;
@@ -2953,14 +2926,4 @@ div.footnotes[role='doc-endnotes'] ol:before {
 div.footnotes[role='doc-endnotes'] ol li::marker {
   color: var(--footnotes-marker-color);
   font-size: smaller;
-}
-
-/* Cancel no layer media alignement from public.css */
-.media-center {
-  display: flex !important;
-  justify-content: center;
-}
-.media-left,
-.media-right {
-  display: inline-flex !important;
 }
