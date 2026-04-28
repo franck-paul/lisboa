@@ -1,10 +1,10 @@
 # 
 # Translators:
-# Franck Paul <carnet.franck.paul@gmail.com>, 2025
+# Franck Paul <contact@open-time.net>, 2025
 # 
 msgid ""
 msgstr ""
-"Last-Translator: Franck Paul <carnet.franck.paul@gmail.com>, 2025\n"
+"Last-Translator: Franck Paul <contact@open-time.net>, 2025\n"
 "Language-Team: German (https://app.transifex.com/open-time/teams/109573/de/)\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
