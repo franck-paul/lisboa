@@ -17,8 +17,7 @@ dotclear.ready(() => {
     switcher.style.display = 'flex';
     switcher.style.visibility = 'visible';
     // Scheme mode switcher
-    const switchMode = (mode) => {
-      const setmode = mode ?? 'auto';
+    const switchMode = (setmode = 'auto') => {
       html.style.setProperty('color-scheme', setmode === 'auto' ? 'light dark' : setmode);
       if (setmode === 'auto') {
         localStorage.removeItem('mode');
