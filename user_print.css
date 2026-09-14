@@ -16,7 +16,7 @@ ul.post-tags-list {
   padding-inline-start: 1em;
 }
 .post-info-co {
-  margin-left: 1em;
+  margin-inline-start: 1em;
 }
 li.post-tags-item:before {
   content: '#';
