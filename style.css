@@ -1019,7 +1019,10 @@
     inline-size: 20em;
     padding: 0 1em;
     float: inline-end;
-    margin: 0 -2em 1em 2em;
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    margin-inline-start: 2em;
+    margin-inline-end: -2em;
   }
 
   tbody {
@@ -1039,7 +1042,9 @@
   #main {
     background-color: var(--main-background-color);
     margin: 1em;
-    padding: 1em 2em 2em;
+    padding-block-start: 1em;
+    padding-block-end: 2em;
+    padding-inline: 2em;
   }
 
   .sidebar,
@@ -1520,7 +1525,10 @@
     aside {
       &.left {
         float: inline-start;
-        margin: 0 2em 1em -2em;
+        margin-block-start: 0;
+        margin-block-end: 1em;
+        margin-inline-start: -2em;
+        margin-inline-end: 2em;
         border-inline-end: 3px solid var(--aside-border-color);
         border-inline-start: none;
       }
@@ -1694,7 +1702,9 @@
 
   /* Post */
   .post {
-    margin: 2em auto 6em;
+    margin-block-start: 2em;
+    margin-block-end: 6em;
+    margin-inline: auto;
   }
 
   .post.simple {
@@ -1817,7 +1827,9 @@
 
   .post-attachments {
     position: relative;
-    padding: 0 2.5em 0.25em;
+    padding-block-start: 0;
+    padding-block-end: 0.25em;
+    padding-inline: 2.5em;
     border: 1px solid var(--post-attachments-border-color);
 
     &::before {
@@ -1870,7 +1882,10 @@
   .comment,
   .ping {
     overflow: hidden;
-    padding: 0.1em 1.5em 0.1em 4em;
+    padding-block-start: 0.1em;
+    padding-block-end: 0.1em;
+    padding-inline-start: 4em;
+    padding-inline-end: 1.5em;
     margin-block-end: 1em;
     box-shadow:
       0 2px var(--feedback-shadow-right-color),
@@ -1951,7 +1966,9 @@
   .comment-form {
     background-color: var(--comment-form-background-color);
     overflow: hidden;
-    padding: 0.75em 3em 0.1em;
+    padding-block-start: 0.75em;
+    padding-block-end: 0.1em;
+    padding-inline: 3em;
     margin-block-end: 2em;
     border-radius: 0.25em;
     box-shadow:
@@ -2090,7 +2107,10 @@
   /* Archives */
   .arch-block {
     display: inline-block;
-    margin: 0 0 2em 0;
+    margin-block-start: 0;
+    margin-block-end: 2em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     vertical-align: top;
   }
   .arch-block a {
@@ -2264,7 +2284,10 @@
 
   /* archives par mois */
   .dc-archive-month #content-info h2 {
-    margin: 0.2em 0 2em 0;
+    margin-block-start: 0.2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
   }
 
   .widget p a {
@@ -2295,7 +2318,10 @@
       position: relative;
     }
     .js #content-info h2 {
-      margin: 0.2em 0 2em 0;
+      margin-block-start: 0.2em;
+      margin-block-end: 2em;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
     }
   }
 
@@ -2478,12 +2504,16 @@
 
       .blognav__title,
       .blogextra__title {
-        margin: 0 0.5em 0.5em;
+        margin-block-start: 0;
+        margin-block-end: 0.5em;
+        margin-inline: 0.5em;
         grid-column: 1 / 4;
       }
 
       .widget {
-        margin: 0 0.5em 0.5em;
+        margin-block-start: 0;
+        margin-block-end: 0.5em;
+        margin-inline: 0.5em;
       }
     }
   }
@@ -2560,7 +2590,9 @@
     }
 
     .post {
-      margin: 1em auto 3em;
+      margin-block-start: 1em;
+      margin-block-end: 3em;
+      margin-inline: auto;
     }
   }
 
@@ -2672,7 +2704,9 @@
 
     .comment-form,
     .send-trackback {
-      padding: 0.75em 0.5em 0.1em;
+      padding-block-start: 0.75em;
+      padding-block-end: 0.1em;
+      padding-inline: 0.5em;
     }
   }
 
@@ -2719,7 +2753,10 @@
   .information {
     display: block;
     border: 1px solid var(--util-msg-border-color);
-    padding: 1em 1em 1em calc(38px + 1em); /* 38px = width SVG 24px + left 14px */
+    padding-block-start: 1em;
+    padding-block-end: 1em;
+    padding-inline-start: calc(38px + 1em);
+    padding-inline-end: 1em; /* 38px = width SVG 24px + left 14px */
     min-block-size: 3.5em;
     box-sizing: content-box;
     margin: 1.5em 1em;
@@ -2739,7 +2776,10 @@
   .parser-result {
     color: var(--util-parser-color);
     background-color: var(--util-parser-background-color);
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    padding-block-start: 0.5em;
+    padding-block-end: 0.5em;
+    padding-inline-start: 0.5em;
+    padding-inline-end: 0.5em;
     border: 1px solid var(--util-parser-border-color);
     border-radius: 0.25em;
     font-size: smaller;
